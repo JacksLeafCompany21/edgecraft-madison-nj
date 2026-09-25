@@ -1,143 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenLine Lawn Care | Madison, NJ</title>
-  <meta name="description" content="GreenLine Lawn Care provides reliable lawn mowing and leaf cleanup in Madison, NJ and nearby areas.">
-  <style>
-    :root { --green:#1f6b3a; --dark:#173524; --light:#f4f8f3; --gold:#e4ad38; --text:#26332a; }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:Arial,Helvetica,sans-serif; color:var(--text); line-height:1.6; background:white; }
-    nav { position:sticky; top:0; z-index:10; background:white; box-shadow:0 2px 12px #0001; display:flex; justify-content:space-between; align-items:center; padding:16px 7%; }
-    .logo { font-size:1.35rem; font-weight:800; color:var(--green); }
-    nav a { color:var(--dark); text-decoration:none; margin-left:24px; font-weight:600; }
-    .hero { background:linear-gradient(135deg,#173524ee,#1f6b3add),url('') center/cover; color:white; padding:105px 7% 95px; }
-    .hero-inner { max-width:850px; }
-    .tag { display:inline-block; background:#ffffff20; border:1px solid #ffffff45; padding:7px 13px; border-radius:30px; margin-bottom:18px; font-weight:700; }
-    h1 { font-size:clamp(2.5rem,6vw,4.8rem); line-height:1.05; margin-bottom:20px; }
-    .hero p { font-size:1.2rem; max-width:650px; margin-bottom:30px; color:#eef7ef; }
-    .btn { display:inline-block; background:var(--gold); color:#172116; padding:14px 23px; border-radius:9px; text-decoration:none; font-weight:800; border:none; cursor:pointer; }
-    section { padding:75px 7%; }
-    .section-title { text-align:center; max-width:700px; margin:0 auto 42px; }
-    .section-title h2 { font-size:2.3rem; color:var(--dark); margin-bottom:8px; }
-    .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:25px; max-width:1000px; margin:auto; }
-    .card { background:var(--light); border-radius:16px; padding:32px; border:1px solid #dce9dd; }
-    .icon { font-size:2.5rem; margin-bottom:12px; }
-    .card h3 { color:var(--green); font-size:1.45rem; margin-bottom:8px; }
-    .why { background:#f4f8f3; }
-    .why-grid { max-width:950px; margin:auto; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; text-align:center; }
-    .why-item { padding:22px; }
-    .why-item strong { display:block; font-size:1.1rem; color:var(--dark); margin-top:8px; }
-    .quote { background:var(--dark); color:white; }
-    .quote-wrap { max-width:720px; margin:auto; }
-    .quote h2 { font-size:2.3rem; margin-bottom:8px; }
-    .quote p { color:#dce9df; margin-bottom:25px; }
-    form { display:grid; gap:14px; }
-    input, select, textarea { width:100%; padding:14px; border-radius:8px; border:1px solid #cbd8ce; font:inherit; }
-    textarea { min-height:120px; resize:vertical; }
-    .notice { font-size:.9rem; color:#cfe2d3; margin-top:12px; }
-    footer { background:#10261a; color:#cbd8ce; text-align:center; padding:28px 7%; }
-    footer strong { color:white; }
-    @media(max-width:700px) {
-      nav a { margin-left:10px; font-size:.9rem; }
-      nav { padding:14px 5%; }
-      .hero { padding:80px 6%; }
-      section { padding:58px 6%; }
-      .cards, .why-grid { grid-template-columns:1fr; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EdgeCraft Sharpening | Madison, NJ</title>
+<meta name="description" content="EdgeCraft Sharpening — door-to-door straight-edge knife sharpening in Madison, New Jersey.">
+<style>
+:root{--dark:#111827;--steel:#334155;--accent:#d97706;--light:#f8fafc;--white:#fff;--muted:#64748b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--white);line-height:1.55}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 2px 12px #00000012}
+.logo{font-size:1.25rem;font-weight:800}.logo span{color:var(--accent)}nav a{color:var(--dark);text-decoration:none;margin-left:20px;font-weight:700}
+.hero{padding:88px 7%;background:linear-gradient(135deg,#111827,#334155);color:white}.hero-inner{max-width:900px;margin:auto}.tag{display:inline-block;background:#ffffff18;border:1px solid #ffffff35;padding:8px 13px;border-radius:999px;font-weight:700}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1;margin:20px 0}.hero p{font-size:1.2rem;max-width:700px}.btn{display:inline-block;margin-top:16px;background:var(--accent);color:#fff;padding:14px 22px;border-radius:9px;text-decoration:none;font-weight:800;border:0;cursor:pointer}
+section{padding:70px 7%}.wrap{max-width:1000px;margin:auto}.title{text-align:center;margin-bottom:36px}.title h2{font-size:2.2rem;margin:0 0 8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{border:1px solid #e2e8f0;border-radius:16px;padding:26px;background:#fff;box-shadow:0 8px 24px #0f172a0b}.card h3{margin-top:0}
+.deal{background:#fff7ed;border:2px solid #fed7aa}.price{font-size:2rem;font-weight:900;color:var(--accent)}
+.notice{background:#f1f5f9}.notice strong{display:block;font-size:1.1rem;margin-bottom:4px}
+form{max-width:720px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:16px}.full{grid-column:1/-1}
+label{display:block;font-weight:700;margin-bottom:6px}input,select,textarea{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:9px;font:inherit}textarea{min-height:110px;resize:vertical}
+button.btn{font-size:1rem;width:100%}.small{font-size:.9rem;color:var(--muted)}footer{padding:38px 7%;background:#111827;color:white;text-align:center}
+footer a{color:#fbbf24} @media(max-width:650px){form{grid-template-columns:1fr}.full{grid-column:auto}nav .links{display:none}}
+</style>
 </head>
 <body>
-  <nav>
-    <div class="logo">🌿 GreenLine Lawn Care</div>
-    <div>
-      <a href="#services">Services</a>
-      <a href="#quote">Get a Quote</a>
-    </div>
-  </nav>
+<nav>
+  <div class="logo">EdgeCraft <span>Sharpening</span></div>
+  <div class="links"><a href="#pricing">Pricing</a><a href="#order">Order</a><a href="#service">Customer Service</a></div>
+</nav>
 
-  <header class="hero">
-    <div class="hero-inner">
-      <span class="tag">Madison, NJ & nearby areas</span>
-      <h1>A cleaner yard starts here.</h1>
-      <p>Reliable lawn mowing and seasonal leaf cleanup to keep your property looking neat, fresh, and cared for.</p>
-      <a class="btn" href="#quote">GET A FREE QUOTE</a>
-    </div>
-  </header>
+<header class="hero">
+ <div class="hero-inner">
+  <span class="tag">Serving Madison, New Jersey Only</span>
+  <h1>Bring the edge back.</h1>
+  <p>Professional door-to-door sharpening for straight-edge kitchen knives. We pick up your knives, sharpen them, and return them to you.</p>
+  <p><strong>Get your knives ready for Thanksgiving.</strong></p>
+  <a class="btn" href="#order">Place an Order</a>
+ </div>
+</header>
 
-  <section id="services">
-    <div class="section-title">
-      <h2>Our Services</h2>
-      <p>Simple, dependable yard care focused on the jobs your lawn needs most.</p>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <div class="icon">🌱</div>
-        <h3>Lawn Mowing</h3>
-        <p>Keep your grass looking neat with regular mowing and a clean finish around the property.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🍂</div>
-        <h3>Leaf Cleanup</h3>
-        <p>When fall arrives, we'll help clear leaves from your yard and get your property looking tidy again.</p>
-      </div>
-    </div>
-  </section>
+<section id="pricing">
+ <div class="wrap">
+  <div class="title"><h2>Simple Pricing</h2><p>Choose a single knife or sharpen the whole drawer.</p></div>
+  <div class="cards">
+   <div class="card"><h3>Single Knife</h3><div class="price">$14.99</div><p>Professional sharpening for one straight-edge knife.</p></div>
+   <div class="card deal"><h3>Whole Drawer Deal</h3><div class="price">5 for $50</div><p>Get five straight-edge knives sharpened for one package price.</p></div>
+   <div class="card"><h3>Door-to-Door Service</h3><p>Pickup and return service for customers in Madison, NJ.</p></div>
+  </div>
+ </div>
+</section>
 
-  <section class="why">
-    <div class="section-title">
-      <h2>Why GreenLine?</h2>
-      <p>We're focused on doing a great job and treating every yard with care.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-item">🌿<strong>Quality Work</strong><span>We take pride in a clean finished yard.</span></div>
-      <div class="why-item">📅<strong>Reliable Service</strong><span>Clear communication and dependable scheduling.</span></div>
-      <div class="why-item">📍<strong>Local Service</strong><span>Proudly serving Madison and nearby communities.</span></div>
-    </div>
-  </section>
+<section class="notice">
+ <div class="wrap">
+  <div class="cards">
+   <div class="card"><strong>Straight-edge knives only</strong>Serrated knives are not accepted.</div>
+   <div class="card"><strong>Payment</strong>Cash or Venmo.</div>
+   <div class="card"><strong>Service Area</strong>Madison, New Jersey only.</div>
+  </div>
+ </div>
+</section>
 
-  <section class="quote" id="quote">
-    <div class="quote-wrap">
-      <h2>Request a Free Quote</h2>
-      <p>Tell us what your yard needs. We'll review your request and get back to you with pricing and scheduling.</p>
-      <form id="quoteForm">
-        <input id="name" required placeholder="Your name">
-        <input id="contact" required placeholder="Phone or email">
-        <select id="service" required>
-          <option value="">Select a service</option>
-          <option>Lawn Mowing</option>
-          <option>Leaf Cleanup</option>
-          <option>Both</option>
-        </select>
-        <input id="area" placeholder="Town / neighborhood">
-        <textarea id="details" placeholder="Tell us anything helpful about the yard (size, number of leaves, etc.)"></textarea>
-        <button class="btn" type="submit">SEND QUOTE REQUEST</button>
-      </form>
-      <p class="notice">Before publishing this site, replace the contact method with a parent/guardian-approved business phone or email.</p>
-    </div>
-  </section>
+<section id="order">
+ <div class="wrap">
+  <div class="title"><h2>Place an Order</h2><p>Send your request and we'll follow up about door-to-door service.</p></div>
+  <form action="https://formspree.io/f/xwlpnazy" method="POST">
+   <div><label for="first">First Name</label><input id="first" name="first_name" required></div>
+   <div><label for="last">Last Name</label><input id="last" name="last_name" required></div>
+   <div class="full"><label for="address">Madison, NJ Address</label><input id="address" name="address" required></div>
+   <div><label for="email">Email</label><input id="email" type="email" name="email" required></div>
+   <div><label for="phone">Phone</label><input id="phone" type="tel" name="phone"></div>
+   <div><label for="quantity">Number of Knives</label><input id="quantity" type="number" min="1" name="number_of_knives" required></div>
+   <div><label for="payment">Payment</label><select id="payment" name="payment_method" required><option value="">Choose one</option><option>Cash</option><option>Venmo</option></select></div>
+   <div class="full"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Anything we should know?"></textarea></div>
+   <input type="hidden" name="_subject" value="New EdgeCraft Sharpening Order">
+   <div class="full"><button class="btn" type="submit">Place Order</button><p class="small">Straight-edge knives only. Service is limited to Madison, NJ.</p></div>
+  </form>
+ </div>
+</section>
 
-  <footer>
-    <p><strong>GreenLine Lawn Care</strong> · Mowing & Leaf Cleanup · Madison, NJ & nearby areas</p>
-    <p>© 2026 GreenLine Lawn Care</p>
-  </footer>
+<section id="service">
+ <div class="wrap">
+  <div class="title"><h2>Customer Service</h2><p>Questions about an order or our service?</p><p><strong>Jack@Novalis.com</strong></p></div>
+ </div>
+</section>
 
-  <script>
-    document.getElementById('quoteForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value;
-      const contact = document.getElementById('contact').value;
-      const service = document.getElementById('service').value;
-      const area = document.getElementById('area').value;
-      const details = document.getElementById('details').value;
-      const subject = encodeURIComponent('GreenLine Lawn Care Quote Request');
-      const body = encodeURIComponent(
-        `Name: ${name}\nContact: ${contact}\nService: ${service}\nArea: ${area}\nDetails: ${details}`
-      );
-      // Replace this email with the business email before publishing.
-      window.location.href = `mailto:YOUR-EMAIL-HERE@example.com?subject=${subject}&body=${body}`;
-    });
-  </script>
+<footer>© 2026 EdgeCraft Sharpening · Madison, NJ</footer>
 </body>
 </html>
